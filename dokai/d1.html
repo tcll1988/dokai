@@ -1,57 +1,138 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
 <title>初級中国語読解</title>
-
-<style type="text/css">
-a:link {
-	color: #03F;
-}
-a:visited {
-	color: #03F;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    background: linear-gradient(135deg, #c9e7ff 0%, #e3ffe6 100%);
+    font-family: 'Segoe UI', 'ヒラギノ角ゴ ProN', 'Meiryo', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 480px;
+    margin: 40px auto 0 auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 2rem;
+    box-shadow: 0 4px 32px 0 rgba(60,150,220,0.13);
+    padding: 32px 18px 24px 18px;
+  }
+  .title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 28px;
+  }
+  .title-row img {
+    width: 100px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,32,96,0.07);
+  }
+  .main-title {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #1760a6;
+    letter-spacing: 0.07em;
+    text-shadow: 1px 2px 9px #eaf6ff;
+  }
+  .lessons-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .lesson-link {
+    display: block;
+    padding: 0.75em 0;
+    border-radius: 1em;
+    font-size: 1.25rem;
+    text-decoration: none;
+    background: linear-gradient(90deg, #def2ff 40%, #fff9e3 100%);
+    color: #18408b;
+    font-weight: 500;
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+    box-shadow: 0 2px 6px rgba(30,80,200,0.05);
+    text-align: center;
+    border: 1px solid #e3f2ff;
+  }
+  .lesson-link:hover {
+    background: linear-gradient(90deg, #aee6ff 30%, #e0ffd9 100%);
+    color: #145580;
+    box-shadow: 0 6px 18px rgba(20,150,160,0.07);
+  }
+  .bottom-actions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .action-link {
+    color: #2776c6;
+    font-size: 1.1rem;
+    text-decoration: none;
+    background: #f3f9ff;
+    padding: 0.4em 1.2em;
+    border-radius: 0.8em;
+    border: 1px solid #bbe2f6;
+    transition: background 0.15s, color 0.15s;
+  }
+  .action-link:hover {
+    background: #d5f2e7;
+    color: #25865e;
+    border-color: #8ce4c0;
+  }
+  .close-btn {
+    margin-top: 10px;
+    background: linear-gradient(90deg, #f5a2d6 30%, #9de2ff 100%);
+    border: none;
+    color: #305170;
+    padding: 0.6em 1.8em;
+    border-radius: 1em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(200,100,200,0.10);
+    transition: background 0.16s, color 0.16s, box-shadow 0.16s;
+  }
+  .close-btn:hover {
+    background: linear-gradient(90deg, #ffe4f0 10%, #c7f8e8 100%);
+    color: #16539a;
+    box-shadow: 0 4px 20px rgba(60,160,220,0.18);
+  }
 </style>
 </head>
-
-<body bgcolor="lightblue">
-
-<!--タイトル　大 -->
-　<table align="center">
-<tr>
-<td>
-  <font size="15">初級中国語読解</font>
-</td>
-<td><img src="images/13.png" width="123" height="86" /></td>
-</tr>
-</table>
-<p align="center">&nbsp;</p>
-<!--使い方のリンク・予備 -->
-
-
-<div align="center"><font size="5"><a href="1k/1k.html">第&nbsp;１&nbsp;課</a></font></div>  
-<div align="center"><font size="5"><a href="2k/2k.html">第&nbsp;２&nbsp;課</a></font></div>
-<div align="center"><font size="5"><a href="3k/3k.html">第&nbsp;３&nbsp;課</font></div>
-<div align="center"><font size="5"><a href="4k/4k.html">第&nbsp;４&nbsp;課</font></div>
-<div align="center"><font size="5"><a href="5k/5k.html">第&nbsp;５&nbsp;課</font></div>
-<div align="center"><font size="5"><a href="6k/6k.html">第&nbsp;６&nbsp;課</font></div>
-<div align="center"><font size="5"><a href="7k/7k.html">第&nbsp;７&nbsp;課</font></div>
-<div align="center"><font size="5"> <a href="8k/8k.html">第&nbsp;８&nbsp;課</a></font></div>
-<div align="center"><font size="5"><a href="9k/9k.html">第&nbsp;９&nbsp;課</font></div>
-<div align="center"><font size="5"><a href="10k/10k.html">第１０課</font></div>
-<div align="center"><font size="5"><a href="11k/11k.html">第１１課</font></div>
-<div align="center"><font size="5"><a href="12k/12k.html">第１２課</font></div>
-<div align="center"><font size="5"><a href="13k/13k.html">第１３課</font></div>
-<div align="center"><font size="5"><a href="14k/14k.html">第１４課</font></div>
-
-
-     <td width="10"></td>
-   <td>
-   <br />
-     <div align="center"> <font size="3"> <a href="../asu.html">戻る</a></font></div> <br />
-   　　　　<div align="center"><input type="button" class="button" value="閉じる" onclick="window.close()" /></div></td><br />
-   <td width="190"></td>
-  </tr>
-</table>
-</body> 
+<body>
+  <div class="container">
+    <div class="title-row">
+      <div class="main-title">初級中国語読解</div>
+      <img src="images/13.png" alt="パンダ"/>
+    </div>
+    <div class="lessons-list">
+      <a class="lesson-link" href="1k/1k.html">第 1 課</a>
+      <a class="lesson-link" href="2k/2k.html">第 2 課</a>
+      <a class="lesson-link" href="3k/3k.html">第 3 課</a>
+      <a class="lesson-link" href="4k/4k.html">第 4 課</a>
+      <a class="lesson-link" href="5k/5k.html">第 5 課</a>
+      <a class="lesson-link" href="6k/6k.html">第 6 課</a>
+      <a class="lesson-link" href="7k/7k.html">第 7 課</a>
+      <a class="lesson-link" href="8k/8k.html">第 8 課</a>
+      <a class="lesson-link" href="9k/9k.html">第 9 課</a>
+      <a class="lesson-link" href="10k/10k.html">第10課</a>
+      <a class="lesson-link" href="11k/11k.html">第11課</a>
+      <a class="lesson-link" href="12k/12k.html">第12課</a>
+      <a class="lesson-link" href="13k/13k.html">第13課</a>
+      <a class="lesson-link" href="14k/14k.html">第14課</a>
+    </div>
+    <div class="bottom-actions">
+      <a class="action-link" href="../asu.html">戻る</a>
+      <button class="close-btn" onclick="window.close()">閉じる</button>
+    </div>
+  </div>
+</body>
 </html>
