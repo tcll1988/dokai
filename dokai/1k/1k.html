@@ -1,64 +1,133 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
 <title>第１課</title>
-<style type="text/css">
-a:link {
-	color: #03F;
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background: linear-gradient(135deg, #c9e7ff 0%, #e3ffe6 100%);
+  font-family: 'Segoe UI', 'ヒラギノ角ゴ ProN', 'Meiryo', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-a:visited {
-	color: #03F;
+.container {
+  max-width: 520px;
+  margin: 40px auto 0 auto;
+  background: rgba(255,255,255,0.97);
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px 0 rgba(60,150,220,0.12);
+  padding: 32px 20px 28px 20px;
+}
+h1 {
+  text-align: center;
+  color: #1760a6;
+  margin-bottom: 32px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+  text-shadow: 1px 2px 7px #eaf6ff;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.back-btn {
+  background: linear-gradient(90deg, #f3f9ff 30%, #d5f2e7 100%);
+  color: #2776c6;
+  font-size: 1.08rem;
+  padding: 0.5em 2.2em;
+  border: 1px solid #bbe2f6;
+  border-radius: 1.2em;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 18px;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+}
+.back-btn:hover {
+  background: linear-gradient(90deg, #d5f2e7 20%, #f3f9ff 100%);
+  color: #25865e;
+  border: 1px solid #9ee4c2;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 48px 1fr;
+  gap: 0 24px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.img-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.lesson-img {
+  width: 90px;
+  height: 100px;
+  border-radius: 1.2em;
+  box-shadow: 0 2px 12px rgba(90,170,240,0.10);
+  background: #fff;
+  object-fit: cover;
+  margin-bottom: 6px;
+}
+.lesson-link {
+  display: inline-block;
+  font-size: 1.08rem;
+  color: #18408b;
+  background: #f1f8ff;
+  border-radius: 0.8em;
+  padding: 0.2em 1.6em;
+  margin-top: 2px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid #dde7f6;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+}
+.lesson-link:hover {
+  background: #d3f2e9;
+  color: #25865e;
+  border: 1px solid #b2e5d6;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 15px 2vw 12vw 2vw;
+  }
+  h1 { font-size: 1.4rem; }
+  .grid { grid-template-columns: 1fr; gap: 0 0; }
+  .img-btn-group { flex-direction: row; gap: 18px;}
 }
 </style>
 </head>
-
 <body>
-<h1 align="center">第１課　我姓山田</h1>
-<!--背景の色 -->
-<style>
-body{background-color:lightblue}
-</style>
-<table align="center">
-  <tr>
-    <td>
-<input align="center" type="submit" value="戻る" onclick="window.location.href('../d1.html')"/>
-    </td>
-  </tr>
-  <tr height="30"></tr>
-  <tr>
-<td><img src="homework/dokai/images/2.png"; width="90" height="100" >
-</td>
-<td width="50"></td>
-<td><img src="homework/dokai/images/3.png"; width="90" height="100">
-</td>
-</tr>
-<tr>
-<td> <div align="center"><font size="3"><a href="homework/dokai/1k-h-1.html">本文</a></font></div>
-</td>
-<td>
-</td>
-<td><div align="center"><font size="3"><a href="homework/dokai/1k-t1-1.html">単語</a></font></div>
-</td>
-</tr>
-  <tr height="30"></tr>
-<tr>
-<td><img src="homework/dokai/images/4.png"; width="90" height="100">
-</td>
-<td width="50"></td>
-<td><img src="homework/dokai/images/5.png"; width="90" height="100">
-</td>
-</tr>
-
-<tr>
-<td> <div align="center"><font size="3"><a href="homework/dokai/1k-p.html">文法</a></font></div>
-</td>
-<td>
-</td>
-<td><div align="center"><font size="3"><a href="http://aasa.mydns.jp:8080/SpringMybatisTest/studentLogin">宿題</a></font></div>
-</td>
-</tr>
-</table>
-　
+  <div class="container">
+    <h1>第１課　我姓山田</h1>
+    <div class="actions">
+      <button class="back-btn" onclick="window.location.href='../d1.html'">戻る</button>
+    </div>
+    <div class="grid">
+      <div class="img-btn-group">
+        <img src="homework/dokai/images/2.png" class="lesson-img" alt="本文">
+        <a href="homework/dokai/1k-h-1.html" class="lesson-link">本文</a>
+      </div>
+      <div></div>
+      <div class="img-btn-group">
+        <img src="homework/dokai/images/3.png" class="lesson-img" alt="単語">
+        <a href="homework/dokai/1k-t1-1.html" class="lesson-link">単語</a>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="img-btn-group">
+        <img src="homework/dokai/images/4.png" class="lesson-img" alt="文法">
+        <a href="homework/dokai/1k-p.html" class="lesson-link">文法</a>
+      </div>
+      <div></div>
+      <div class="img-btn-group">
+        <img src="homework/dokai/images/5.png" class="lesson-img" alt="宿題">
+        <a href="http://aasa.mydns.jp:8080/SpringMybatisTest/studentLogin" class="lesson-link">宿題</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
